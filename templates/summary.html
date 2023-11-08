@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    سفشفهسفهنش
+{% endblock %}
+{% block body %}
+    <div class="container mt-5">
+        <h1>Сводка</h1>
+        {% for elements in article %}
+            <div class="alert alert-info bcol" >
+                <div class="telc"><h2 class="inb">{{ elements.title }}</h2></div><br>
+                <div class="row">
+                    <h4 class="inb col-10">{{ elements.character }}</h4>
+                    <p class="inb col-3">Kills: {{ elements.kills }}</p>
+                    <p class="inb col-3">Deaths: {{ elements.deaths }}</p>
+                    <p class="inb col-3">Assists: {{ elements.supports }}</p>
+                    <p class="inb col-3">role: {{ elements.role }}</p>
+                    <h2 class="inb col-3">{{ elements.win }}</h2>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,50 @@
+.head{
+    border: 2px;
+    background-color: rgb(87, 85, 85);
+    width: 100%;
+}
+.percent_wins{
+    height: 75%;
+}
+.niz{
+    height: 10%;
+}
+.inb{
+    display: inline-block;
+}
+.telc{
+    text-align: center;
+}
+.gg{
+    width: 16%;
+}
+.bcol{
+    background-color: black;
+}
+.main_page_wins{
+    border: 1px;
+    border: solid whitesmoke;
+    /* width: 50%; */
+    height: 66.7%;
+}
+.main_page_best_hero{
+    border: 1px;
+    border: solid whitesmoke;
+    height: 30%;
+}
+
+.main_page_stats{
+    border: 1px;
+    border: solid whitesmoke;
+    height: 475px;
+}
+.legend{
+    border :3px;
+    border: solid red;
+    background-color: red;
+}
+
+.bc {
+    margin-left: 10%;
+    color: rgb(110,223,246);
+}

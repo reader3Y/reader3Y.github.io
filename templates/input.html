@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    я гений
+{% endblock %}
+{% block body %}
+<div class="container mt-5">
+    <div class="row"> 
+        <form action="/input" method="POST">
+        <input type="string" name="title" class="form-control" placeholder="Название(по желанию)"><br>
+        <input type="string(20)" name="character" id="character" cols="40" rows="2" class="gg" placeholder="character"></input>
+        <input type="number" name="kills" id="kills" cols="40" rows="2" class="gg" placeholder="Kills"></input>
+        <input type="number" name="deaths" id="deaths" cols="40" rows="2" class="gg" placeholder="Deaths"></input>
+        <input type="number" name="supports" id="supports" cols="40" rows="2" class="gg" placeholder="Supports"></input>
+        <input type="number" name="role" id="role" cols="40" rows="2" class="gg" placeholder="Role"></input>
+        <input type="string" name="win" id="win" cols="40" rows="2" class="gg" placeholder="Win or Lose"></input><br>
+        <button type="submit" class="btn btn-sucsess">add</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

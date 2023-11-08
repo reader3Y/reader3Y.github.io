@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+  tim glupii  
+{% endblock %}
+{% block body %}
+  <div class="container">
+    <div class="row">
+      <div class="inb col-6">
+        <div class="main_page_wins mb-3">
+          <h1>Victory statistics</h1>
+          <div id="chart"></div>
+        </div>
+        <div class="main_page_best_hero mb-3">
+          <h2>Best hero:</h2>
+          <h1 class="bc">{{ best.character }}</h1>
+        </div>
+      </div>
+      <div class="inb col-5 main_page_stats">
+        <h1>www</h1>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="../static/main_page.js"></script>
+{% endblock %}
